@@ -148,6 +148,71 @@
 //     });
 // });
 
+document.addEventListener("DOMContentLoaded", function() {
+    let knopik1 = document.querySelector(".knopik1");
+    let schetchik1 = document.querySelector(".schetchik1");
+    let count1 = 0;
+    knopik1.addEventListener("click", function() {
+        if (count1 < 15) {
+            count1++;
+            schetchik1.textContent = count1;
+            if (count1 === 15) {
+                knopik1.disabled = true;
+                alert("Достигнуто максимальное количество кликов!");
+            }
+        }
+    });
+    
+    let knopik2 = document.querySelector(".knopik2");
+    let timer2 = document.querySelector(".timer2");
+    let count2 = 10;
+    let interval2;
+    
+    function startTimer2() {
+        interval2 = setInterval(function() {
+            count2--;
+            timer2.textContent = count2;
+            if (count2 === 0) {
+                clearInterval(interval2);
+                alert("Время вышло!");
+            }
+        }, 1000);
+    }
+    
+    startTimer2();
+    knopik2.addEventListener("click", function() {
+        clearInterval(interval2);
+        count2= 10;
+        timer2.textContent = count2;
+        startTimer2();
+    });
+    
+    let knopik3_start = document.querySelector(".knopik3-start");
+    let knopik3_stop = document.querySelector(".knopik3-stop");
+    let knopik3_reset = document.querySelector(".knopik3-reset");
+    let timer3 = document.querySelector(".timer3");
+    let count3 = 0;
+    let interval3;
+    knopik3_start.addEventListener("click", function() {
+        if (!interval3) {
+            interval3 = setInterval(function() {
+                count3++;
+                timer3.textContent = count3;
+            }, 1000);
+        }
+    });
+    knopik3_stop.addEventListener("click", function() {
+        clearInterval(interval3);
+        interval3 = null;
+    });
+    knopik3_reset.addEventListener("click", function() {
+        clearInterval(interval3);
+        interval3 = null;
+        count3 = 0;
+        timer3.textContent = count3;
+    });
+});
+
 
 
 
