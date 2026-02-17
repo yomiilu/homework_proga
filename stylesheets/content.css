@@ -1,16 +1,57 @@
-*{ box-sizing: border-box;}
-html, body{ height: 100%;
-background: bisque;}
-
-@font-face {
-font-family: "CarlaSansLight";
-src: url("../fonts/CarlaSansLight.ttf") format("truetype");
-font-style: Light;
-font-weight: Light;
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-p{ font-family: 'CarlaSansLight'; }
+html, body { 
+    height: 100%;
+    width: 100%;
+}
 
-#integriruemtext{
-    margin: 10% 40%;
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+}
+
+button {
+    font-size: 24px;
+    font-weight: bold;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.glass1 {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    opacity: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.neo2 {
+    background: #e0e0e0;
+    box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #bebebe;
+}
+
+.click3 {
+    background-color: lightsteelblue;
+    margin: 1vw;
+    transition: all 0.5s ease;
+}
+
+.click3:hover {
+    transform: scale(1.05);
 }

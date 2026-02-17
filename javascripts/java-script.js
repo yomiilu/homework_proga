@@ -67,11 +67,86 @@
     // Задача 6: Проверка года
     // Напишите программу, которая проверяет, является ли введённый год високосным.
     // Подсказка: Год является високосным, если:
-    let x = parseInt(prompt("введите число"))
-    if (x%4 || ( x%100 && x%400)) {alert('високосный год')}
-    else {alert("это не високосный год")};
+    // let x = parseInt(prompt("введите число"))
+    // if (x%4 || x%100 && x%400) {alert('високосный год')}
+    // else {alert("это не високосный год")};
 
+    // Задача 7: Простое сравнение
+    // Пусть программа спрашивает у пользователя число. Если оно больше 100, выводит "Большое число", если меньше – "Маленькое число", а если равно 100 – "Точно 100!".
+    // let y = parseInt(prompt("введите число"));
+    // if (y>100) {alert('оч большое число')}
+    // else if (y<100) {alert('оч маленькое число')}
+    // else {alert('вау ровно 100!')};
 
+    // ДОМАШКА 3
+
+    // Я люблю ненавязчивый дизайн за то, что он не отвлекает пользователя от основного контента, делая взаимодействие интуитивным и приятным. В проектах это реализуется через минималистичную цветовую гамму, простую типографику и отказ от лишних элементов, что ускоряет загрузку и упрощает адаптацию под любые устройства.
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     // Весь твой код с кнопками сюда
+//     let glass = document.querySelectorAll(".glass1");
+//     glass.forEach(function(button){
+//         button.addEventListener("click", function(){
+//             if(button.style.backgroundColor === "rgba(255, 255, 255, 0.2)" || button.style.backgroundColor === ""){
+//                 button.style.backgroundColor = "lightcoral";
+//                 button.style.margin = '2vw';
+//             } else {
+//                 button.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
+//                 button.style.margin = '1vw';
+//             }
+//         });
+//     });
+
+//     let neo = document.querySelectorAll(".neo2");
+//     neo.forEach(function(button){
+//         button.addEventListener("click", function(){
+//             if(button.style.backgroundColor === "#e0e0e0" || button.style.backgroundColor === ""){
+//                 button.style.backgroundColor = "lightgreen";
+//                 button.style.margin = '2vw';
+//             } else {
+//                 button.style.backgroundColor = "#e0e0e0";
+//                 button.style.margin = '1vw';
+//             }
+//         });
+//     });
+
+//     let click = document.querySelectorAll(".click3");
+//     click.forEach(function(button){
+//         button.addEventListener("click", function(){
+//             if(button.style.backgroundColor === "lightsteelblue" || button.style.backgroundColor === ""){
+//                 button.style.backgroundColor = "plum";
+//                 button.style.margin = '2vw';
+//             } else {
+//                 button.style.backgroundColor = "lightsteelblue";
+//                 button.style.margin = '1vw';
+//             }
+//         });
+//     });
+// });
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     let coordX = document.querySelector(".coordx");
+//     let coordY = document.querySelector(".coordy");
+//     document.addEventListener("mousemove", function(event) {
+//         let x = event.clientX;
+//         let y = event.clientY;
+        
+//         coordX.textContent = x;
+//         coordY.textContent = y;
+    
+//         if (x > 500) {coordX.style.color = "red";
+//         } else if (x < 200) {
+//             coordX.style.color = "blue";
+//         } else {coordX.style.color = "black";
+//         }
+        
+//         if (y > 400) {coordY.style.color = "green";
+//         } else if (y < 150) {
+//             coordY.style.color = "orange";
+//         } else {coordY.style.color = "black";
+//         }
+//     });
+// });
 
 
 
