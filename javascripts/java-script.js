@@ -83,7 +83,6 @@
     // Я люблю ненавязчивый дизайн за то, что он не отвлекает пользователя от основного контента, делая взаимодействие интуитивным и приятным. В проектах это реализуется через минималистичную цветовую гамму, простую типографику и отказ от лишних элементов, что ускоряет загрузку и упрощает адаптацию под любые устройства.
 
 // document.addEventListener("DOMContentLoaded", function() {
-//     // Весь твой код с кнопками сюда
 //     let glass = document.querySelectorAll(".glass1");
 //     glass.forEach(function(button){
 //         button.addEventListener("click", function(){
@@ -158,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function() {
             schetchik1.textContent = count1;
             if (count1 === 15) {
                 knopik1.disabled = true;
-                alert("Достигнуто максимальное количество кликов!");
+                alert("достигнуто максимальное количество кликов!");
             }
         }
     });
@@ -167,18 +166,16 @@ document.addEventListener("DOMContentLoaded", function() {
     let timer2 = document.querySelector(".timer2");
     let count2 = 10;
     let interval2;
-    
     function startTimer2() {
         interval2 = setInterval(function() {
             count2--;
             timer2.textContent = count2;
             if (count2 === 0) {
                 clearInterval(interval2);
-                alert("Время вышло!");
+                alert("Время вышло");
             }
         }, 1000);
     }
-    
     startTimer2();
     knopik2.addEventListener("click", function() {
         clearInterval(interval2);
@@ -186,7 +183,6 @@ document.addEventListener("DOMContentLoaded", function() {
         timer2.textContent = count2;
         startTimer2();
     });
-    
     let knopik3_start = document.querySelector(".knopik3-start");
     let knopik3_stop = document.querySelector(".knopik3-stop");
     let knopik3_reset = document.querySelector(".knopik3-reset");
